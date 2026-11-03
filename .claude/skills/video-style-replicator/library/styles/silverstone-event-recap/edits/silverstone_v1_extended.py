@@ -1,0 +1,30 @@
+# Approved edit (song bar 23 -> song's hard stop; approved). Converted to the engine format; clip IDs = ingest_footage order (f01..f18)
+# of the Silverstone footage folder. Kept as a worked example of P01-P04, C01, T01-T02, M01-M04.
+FOOTAGE = "footage/map.json"   # produced by ingest_footage.py on the original clip folder
+EDIT = dict(
+    name="silverstone_v1_extended", sources=FOOTAGE, fps=30, size="1080x1920", time_base="song",
+    music=dict(file="IKEBE 3k.mp3", start=47.206, end=85.4, fade_out=0.04, loudnorm=-14),
+    tail=dict(frames=3, color="black"),
+    blocks=[('A_hook_burst', 51.293,
+  [('f16', 1.3, 17), ('f01', 4.0, 9), ('f14', 3.0, 9), ('f03', 1.0, 10), ('f04', 2.2, 9), ('f11', 80.5, 9),
+   ('f08', 18.4, 11), ('f04', 5.0, 8), ('f06', 45.0, 9), ('f10', 2.0, 9), ('f13', 13.0, 8),
+   ('f05', 40.0, None)]),
+ ('B_break_hold', 53.29, [('f18', 2.0, None)]),
+ ('C_reentry_burst', 57.377,
+  [('f09', 10.3, 12), ('f07', 5.8, 10), ('f18', 6.0, 10), ('f09', 12.0, 9), ('f08', 4.0, 10),
+   ('f07', 7.7, 14), ('f09', 13.2, 10), ('f06', 60.0, 10), ('f18', 14.0, 10), ('f07', 12.0, 10),
+   ('f08', 5.5, 9), ('f18', 4.2, None)]),
+ ('D_holds', 61.44, [('f13', 32.4, 62), ('f10', 12.0, None)]),
+ ('E_build_burst', 67.547,
+  [('f11', 86.4, 12), ('f12', 12.0, 10), ('f11', 22.0, 9), ('f12', 30.0, 10), ('f14', 10.0, 9),
+   ('f01', 6.0, 10), ('f13', 25.0, 10), ('f10', 17.0, 10), ('f16', 3.0, 9), ('f11', 50.0, 10),
+   ('f12', 45.0, 10), ('f08', 21.5, 10), ('f03', 3.0, 10), ('f14', 30.0, 10), ('f06', 20.0, 10),
+   ('f11', 40.0, 10), ('f12', 60.0, 10), ('f05', 41.0, None)]),
+ ('F_payoff_hold', 69.59, [('f12', 77.3, None)]),
+ ('G_holds', 73.654, [('f11', 47.5, 61), ('f10', 16.5, None)]),
+ ('H_burst3', 79.459,
+  [('f06', 22.0, 13), ('f07', 18.0, 13), ('f11', 96.0, 15), ('f12', 20.0, 13), ('f14', 22.0, 13),
+   ('f18', 21.0, 13), ('f09', 5.5, 13), ('f06', 30.0, 13), ('f01', 1.0, 13), ('f13', 28.0, 13),
+   ('f12', 15.0, 13), ('f07', 24.0, 13), ('f08', 2.0, None)]),
+ ('I_hold', 81.525, [('f11', 107.5, None)]), ('J_outro', 85.4, [('f02', 9.85, 36), ('f08', 17.4, None)])],
+)

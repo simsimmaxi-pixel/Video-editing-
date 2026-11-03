@@ -1,0 +1,31 @@
+# Approved edit (song from the top -> end of first section; approved). Converted to the engine format; clip IDs = ingest_footage order (f01..f18)
+# of the Silverstone footage folder. Kept as a worked example of P01-P04, C01, T01-T02, M01-M04.
+FOOTAGE = "footage/map.json"   # produced by ingest_footage.py on the original clip folder
+EDIT = dict(
+    name="silverstone_v2", sources=FOOTAGE, fps=30, size="1080x1920", time_base="song",
+    music=dict(file="IKEBE 3k.mp3", start=0.0, end=36.8, fade_out=0.04, loudnorm=-14),
+    tail=dict(frames=3, color="black"),
+    blocks=[('A_hook_burst', 4.249,
+  [('f11', 96.0, 15), ('f01', 1.0, 9), ('f12', 15.0, 9), ('f14', 22.0, 9), ('f04', 3.5, 9), ('f10', 5.0, 9),
+   ('f16', 6.0, 9), ('f06', 6.0, 9), ('f03', 4.5, 9), ('f08', 19.5, 10), ('f05', 38.0, 9),
+   ('f11', 2.0, None)]),
+ ('B_holds', 8.313, [('f12', 4.3, 61), ('f13', 0.5, None)]),
+ ('C_game_burst', 12.376,
+  [('f06', 14.0, 15), ('f07', 18.0, 15), ('f18', 21.0, 15), ('f09', 5.5, 15), ('f07', 24.0, 15),
+   ('f06', 22.0, 15), ('f18', 24.5, 15), ('f09', 9.0, None)]),
+ ('D_holds', 16.44, [('f13', 41.5, 61), ('f16', 8.0, None)]),
+ ('E_build_burst', 20.53,
+  [('f12', 20.0, 10), ('f11', 30.0, 10), ('f14', 26.0, 10), ('f04', 6.5, 10), ('f07', 29.0, 10),
+   ('f08', 2.0, 10), ('f06', 30.0, 10), ('f01', 7.5, 10), ('f03', 5.5, 10), ('f11', 10.0, 10),
+   ('f14', 15.0, 10), ('f05', 42.0, None)]),
+ ('F1_chorus_burst', 24.59,
+  [('f09', 11.5, 10), ('f18', 7.0, 10), ('f07', 6.5, 10), ('f09', 13.0, 10), ('f06', 50.0, 10),
+   ('f08', 7.0, 10), ('f18', 26.0, 10), ('f07', 26.0, 10), ('f06', 40.0, 10), ('f18', 12.0, 10),
+   ('f09', 2.0, 10), ('f08', 9.5, None)]),
+ ('F2_win_hold', 26.61, [('f07', 7.3, None)]),
+ ('F3_burst', 28.65,
+  [('f12', 25.0, 10), ('f11', 49.0, 10), ('f14', 40.0, 10), ('f10', 17.5, 10), ('f11', 97.5, 10),
+   ('f13', 28.0, None)]),
+ ('G_holds', 32.72, [('f10', 5.5, 61), ('f11', 81.0, None)]),
+ ('H_outro', 36.8, [('f02', 9.85, 36), ('f14', 0.5, None)])],
+)

@@ -1,0 +1,12 @@
+# media and caches stay local (large / third-party content)
+projects/*/ref/
+projects/*/footage/
+projects/*/music/
+projects/*/output/
+projects/*/analysis/frames/
+*.npz
+*.mp4
+*.mov
+*.wav
+*.mp3
+__pycache__/
